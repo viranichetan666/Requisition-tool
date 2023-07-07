@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The alert message box */
+.alert {
+    position: fixed;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    top: 30px;
+    right: 30px;
+    transition: 0.5s ease all;
+    transform: translateX(500px);
+  }
+  
+  .alert.show {
+    transform: translateX(0px);
+  }
+  
+  .button-loader {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1.3s linear infinite;
+    position: absolute;
+    right: 10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
